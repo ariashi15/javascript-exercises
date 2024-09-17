@@ -1,6 +1,6 @@
 const reverseString = function(s) {
     result = "";
-    for (char of s) {
+    for (const char of s) {
         result = char + result;
     }
 
