@@ -7,19 +7,17 @@ const subtract = function(n1, n2) {
 };
 
 const sum = function(arr) {
-  let res = 0;
-	arr.forEach(element => {
-    res += element;
-  });
+  const res = arr.reduce((total, cur) => {
+    return total + cur;
+  }, 0);
 
   return res;
 };
 
 const multiply = function(arr) {
-  let res = 1;
-  arr.forEach(element => {
-    res *= element;
-  })
+  const res = arr.reduce((total, cur) => {
+    return total * cur;
+  }, 1);
   return res;
 };
 
